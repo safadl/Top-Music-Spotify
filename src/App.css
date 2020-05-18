@@ -1,0 +1,214 @@
+body{
+    background-color: black;
+    color:white;
+}
+.App{
+    text-align: center;
+    padding:5%;
+}
+.App-title{
+    font-size: 50px;
+    margin-bottom:100px;
+    margin-top:20px;
+    color:#1DB954;
+    font-family: 'Segoe UI';
+}
+
+
+.profile{
+    display:flex;
+    justify-content: center;
+    margin-bottom:5%;
+
+
+}
+.profile-info{
+    margin-left:10px;
+    text-align:left;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+
+}
+.profile-image{
+    width:200px;
+    height:200px;
+    border:3px solid white;
+    border-radius:100px;
+    object-fit:cover;
+}
+.profile-name{
+    font-size:32px;
+
+}
+.profile-followers, .profile-genres{
+    font-size:21px;
+}
+
+
+.track{
+    display:inline-block;
+    width:220px;
+    height:220px;
+    margin:10px;
+    text-align: left;
+    cursor: pointer;
+    position:relative;
+}
+
+.track-img{
+    width:220px;
+    height:220px;
+    border-radius: 3px solid white;
+    border-radius: 3px;
+    object-fit: cover;
+    position: absolute;
+
+}
+.track-text{
+    background-color:black;
+    color:white;
+    opacity:0.75;
+    width:214px;
+    margin-left:3px;
+    text-align:center;
+    position:absolute;
+    bottom:0;
+    padding:3px;
+}
+.track-play{
+    position: absolute;
+    width:220px;
+    height:220px;
+
+}
+.track-play-inner{
+    position: absolute;
+    text-align: center;
+    font-size: 25px;
+    background-color: black;
+    border-radius:30px;
+    width:60px;
+    height:60px;
+    color:white;
+    padding-top:13px;
+    margin-left:80px;
+    margin-top:80px;
+    opacity:0;
+    justify-content: center;
+
+
+}
+.track-play-inner:hover{
+opacity:0.8;
+animation-name: fade-in;
+animation-duration: 0.5s;
+}
+@keyframes fade-in{
+    from{
+        opacity:0;
+    }
+    to{
+        opacity:0.8;
+    }
+}
+
+.form{
+    text-align: center;
+}
+.stop{
+    font-weight: bolder;
+
+}
+.no-preview{
+text-align: center;
+justify-content: center;
+
+
+}
+.no-preview-text{
+text-align:center;
+color:white;
+font-size: 15px;
+position: absolute;
+background-color:black;
+opacity:0.4;
+margin-left:12px;
+}
+.text-center{
+    border-radius:50px; 
+    border-color:#8f8e8e;
+    border-width: 0.5px; 
+}
+.form-group{
+    margin-bottom:8%; 
+   
+}
+.divv:focus-within{
+    
+   animation-name: topform;
+   animation-duration:1s;
+   animation-fill-mode: forwards;
+   
+}
+
+.button{
+    background-color: #1DB954;
+    border-color: #1DB954;
+    border-radius:50px;
+    
+
+}
+.button:hover{
+    background-color: rgb(12, 161, 65);
+    opacity:0.6;  
+}
+.search{
+    color: white;    
+}
+
+.Info{
+text-align: start;
+font-size:10px;
+margin:1%;
+}
+
+
+@keyframes topform{
+    to{
+        margin-top:-5%;
+        
+    }
+
+}
+
+
+  .button span {
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: 0.5s;
+  }
+  
+  .button span:after {
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    right: -20px;
+    transition: 0.5s;
+  }
+  
+  .button:hover span {
+    padding-right: 25px;
+  }
+  
+  .button:hover span:after {
+    opacity: 1;
+    right: 0;
+  }
+  .spotifyimg{
+    width:150px;
+  }
+  .navbar{
+    box-shadow: 0 10px 30px 0 rgb(33,33,33,0.15)
+  }
